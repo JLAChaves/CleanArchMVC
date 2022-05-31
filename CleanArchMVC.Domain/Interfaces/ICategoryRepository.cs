@@ -9,7 +9,7 @@ namespace CleanArchMVC.Domain.Interfaces
 {
     public interface ICategoryRepository
     {
-        Task<IEnumerable<Category>> GetCategori();
+        Task<IEnumerable<Category>> GetCategories();
         Task<Category> GetById(int? id);
 
         Task<Category> Create(Category category);

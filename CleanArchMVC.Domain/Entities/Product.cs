@@ -1,9 +1,4 @@
 ﻿using CleanArchMVC.Domain.Validation;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CleanArchMVC.Domain.Entities
 {
@@ -49,7 +44,7 @@ namespace CleanArchMVC.Domain.Entities
             DomainExceptionValidation.When(description.Length < 5,
                 "Invalid description, too short, minimum 5 characters");
 
-            DomainExceptionValidation.When(price < 0,"Invalid Price Value");
+            DomainExceptionValidation.When(price < 0, "Invalid Price Value");
 
             DomainExceptionValidation.When(stock < 0, "Invalid Stock Value");
 

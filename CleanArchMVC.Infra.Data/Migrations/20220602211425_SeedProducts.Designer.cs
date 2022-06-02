@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CleanArchMVC.Infra.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20220601162046_init")]
-    partial class init
+    [Migration("20220602211425_SeedProducts")]
+    partial class SeedProducts
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -39,6 +39,23 @@ namespace CleanArchMVC.Infra.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Categories");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "School Supplies"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "Electronics"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Name = "Accessories"
+                        });
                 });
 
             modelBuilder.Entity("CleanArchMVC.Domain.Entities.Product", b =>

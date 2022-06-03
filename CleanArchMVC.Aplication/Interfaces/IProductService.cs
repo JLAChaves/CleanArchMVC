@@ -1,6 +1,6 @@
 ﻿using CleanArchMVC.Application.DTOs;
 
-namespace CleanArchMvc.Application.Interfaces
+namespace CleanArchMVC.Application.Interfaces
 {
     public interface IProductService
     {

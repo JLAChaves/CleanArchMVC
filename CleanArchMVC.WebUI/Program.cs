@@ -1,4 +1,4 @@
-using CleanArchMvc.WebUI;
+using CleanArchMVC.WebUI;
 
 namespace CleanArchMvc.API
 {

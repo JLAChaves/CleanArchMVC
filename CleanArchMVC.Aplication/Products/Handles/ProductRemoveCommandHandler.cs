@@ -5,7 +5,7 @@ using MediatR;
 
 namespace CleanArchMVC.Application.Products.Handles
 {
-    public class ProductRemoveCommandHandler : IRequestHandler<ProductUpdateCommand, Product>
+    public class ProductRemoveCommandHandler : IRequestHandler<ProductRemoveCommand, Product>
     {
         private readonly IProductRepository _productRepository;
         public ProductRemoveCommandHandler(IProductRepository productRepository)
@@ -14,7 +14,7 @@ namespace CleanArchMVC.Application.Products.Handles
                 ArgumentNullException(nameof(productRepository));
         }
 
-        public async Task<Product> Handle(ProductUpdateCommand request,
+        public async Task<Product> Handle(ProductRemoveCommand request,
             CancellationToken cancellationToken)
         {
             var product = await _productRepository.GetByIdAsync(request.Id);

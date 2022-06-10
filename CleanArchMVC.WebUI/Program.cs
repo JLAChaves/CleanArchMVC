@@ -1,6 +1,6 @@
 using CleanArchMVC.WebUI;
 
-namespace CleanArchMvc.API
+namespace CleanArchMVC.API
 {
     public class Program
     {

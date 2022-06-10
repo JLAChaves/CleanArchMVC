@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CleanArchMVC.Application.Products.Commands
 {
-    public abstract class ProductComand : IRequest<Product>
+    public abstract class ProductCommand : IRequest<Product>
     {
         public string? Name { get; set; }
         public string? Description { get; set; }

@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.MVC;
 
 namespace CleanArchMVC.WebUI.Controllers
 {

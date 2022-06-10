@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CleanArchMVC.Application.Products.Commands
 {
-    public class ProductUpdateCommand : ProductComand
+    public class ProductUpdateCommand : ProductCommand
     {
         public int Id { get; set; }
     }

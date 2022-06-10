@@ -5,10 +5,10 @@ using MediatR;
 
 namespace CleanArchMVC.Application.Products.Handles
 {
-    public class ProductUpdateCommanderHandler : IRequestHandler<ProductUpdateCommand, Product>
+    public class ProductUpdateCommandHandler : IRequestHandler<ProductUpdateCommand, Product>
     {
         private readonly IProductRepository _productRepository;
-        public ProductUpdateCommanderHandler(IProductRepository productRepository)
+        public ProductUpdateCommandHandler(IProductRepository productRepository)
         {
             _productRepository = productRepository ??
             throw new ArgumentNullException(nameof(productRepository));

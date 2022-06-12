@@ -1,7 +1,7 @@
 ﻿using CleanArchMVC.Application.DTOs;
 using CleanArchMVC.Application.Interfaces;
-using Microsoft.AspNetCore.MVC;
-using Microsoft.AspNetCore.MVC.Rendering;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace CleanArchMVC.WebUI.Controllers
 {
